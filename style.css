@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.phone img {
+    height: 50rem;
+}
+
+.infos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 45%;
+    min-height: 34rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.3rem 0;
+    background-color: #fff;
+    border: 1px solid lightgray;
+    margin: 10px;
+    
+}
+
+.continue {
+    min-height: 19rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: 3.5rem;
+    margin-top:15px;
+}
+.pfp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px;
+}
+.pfp img {
+    height: 6rem;
+}
+.login {
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+    font-weight: 550;
+}
+.logout {
+    color: #0095f6;
+    margin-top: 1rem;
+    font-weight: 550;
+}
+.account {
+    color: rgb(160, 160, 160);
+    padding: 15px;
+}
+.account a{
+    color: #0095f6;
+    font-weight: 550;
+}
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+.appdownload {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+#applestore {
+    background-image: url("img/apple-button.png");
+    background-position: center;
+}
+#playstore {
+    background-image: url("img/googleplay-button.png");
+    background-position: center;
+}
+@media (max-width: 1024px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .wrapper {
+        width: 90%;
+    }
+
+    .phone {
+        display: none;
+    }
+
+    .infos {
+        width: 100%;
+    }
+    
+    .container {
+        border: 1px solid transparent;
+    }
+}
